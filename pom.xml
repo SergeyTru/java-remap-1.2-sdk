@@ -37,12 +37,12 @@
         <repository>
             <id>artifactory</id>
             <name>Moysklad Libs Release Repo</name>
-            <url>https://repo.moysklad.ru/artifactory/libs-release-local/</url>
+            <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>artifactory</id>
             <name>Moysklad Libs Snapshot Repo</name>
-            <url>https://repo.moysklad.ru/artifactory/libs-snapshot-local/</url>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 

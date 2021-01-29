@@ -21,7 +21,7 @@
 
     <developers>
         <developer>
-            <name>Lognex llc</name>
+            <name>Lognex, LLC</name>
             <email>support@moysklad.ru</email>
             <url>https://dev.moysklad.ru/doc/api/remap/1.2/</url>
             <organizationUrl>https://www.moysklad.ru</organizationUrl>
@@ -29,8 +29,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/moysklad/java-remap-1.2-sdk.git</connection>
-        <url>https://github.com/moysklad/java-remap-1.2-sdk.git</url>
+        <connection>scm:git:git://github.com/SergeyTru/java-remap-1.2-sdk.git</connection>
+        <url>https://github.com/SergeyTru/java-remap-1.2-sdk.git</url>
     </scm>
 
     <distributionManagement>
@@ -136,4 +136,49 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

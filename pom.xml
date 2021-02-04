@@ -4,7 +4,7 @@
 
     <groupId>com.moysklad.api</groupId>
     <artifactId>api-remap-1.2-sdk</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <version>2.1</version>
 
     <name>SDK for MoySklad / MyStore remap api</name>
     <description>Simplest way to work with entities like assortment and documents from moysklad.ru</description>
@@ -29,7 +29,7 @@
     <scm>
         <connection>scm:git:https://github.com/SergeyTru/java-remap-1.2-sdk.git</connection>
         <url>https://github.com/SergeyTru/java-remap-1.2-sdk.git</url>
-        <tag>api-remap-1.2-sdk-2.0</tag>
+        <tag>v2.1-release</tag>
     </scm>
 
     <distributionManagement>

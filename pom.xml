@@ -34,12 +34,12 @@
 
     <distributionManagement>
         <repository>
-            <id>artifactory</id>
+            <id>ossrh</id>
             <name>Moysklad Libs Release Repo</name>
             <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>artifactory</id>
+            <id>ossrh</id>
             <name>Moysklad Libs Snapshot Repo</name>
             <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
